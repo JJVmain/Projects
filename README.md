@@ -1,6 +1,22 @@
 # Projects
 A collection of some of the projects I have finished with others during my time as a masterstudent Artificial Intelligence at the University of Amsterdam
 
+## Registers in Small Vision Transformers: A Reproducibility Study of Vision Transformers Need Registers (Publication)
+### Abstract
+Recent work has shown that Vision Transformers (ViTs) can produce “high-norm” artifact
+tokens in attention maps. These artifacts disproportionately accumulate global information,
+can degrade performance, and reduce interpretability in these models. Darcet et al. (2024)
+proposed registers—auxiliary learnable tokens—to mitigate these artifacts. In this repro-
+ducibility study, we verify whether these improvements extend to smaller ViTs. Specifically,
+we examine whether high-norm tokens appear in a DeiT-III Small model, whether registers
+reduce these artifacts, and how registers influence local and global feature representation.
+Our results confirm that smaller ViTs also exhibit high-norm tokens and registers partially
+alleviate them, improving interpretability. Although the overall performance gains are mod-
+est, these findings reinforce the utility of registers in enhancing ViTs while highlighting open
+questions about their varying effectiveness across different inputs and tasks. Our code is
+available at https://github.com/SnorrenanxD/regs-small-vits.
+### [Link](https://openreview.net/forum?id=5JflRlCt3Q)
+
 ## 3D Hand Contact Estimation from 2D Foundation Models
 ### Abstract
 Estimating dense 3D contact between hands and objects
@@ -90,19 +106,3 @@ test the model for classification and cleansing. resulting in more robust and ve
 tile neural networks. The experiments we have ran can be found an executed in
 https://github.com/WouterBesse/scalegmnUvADL2/tree/main
 ### [Link](SEG_MetaNetworks.pdf)
-
-## Registers in Small Vision Transformers: A Reproducibility Study of Vision Transformers Need Registers
-### Abstract
-Recent work has shown that Vision Transformers (ViTs) can produce “high-norm” artifact
-tokens in attention maps. These artifacts disproportionately accumulate global information,
-can degrade performance, and reduce interpretability in these models. Darcet et al. (2024)
-proposed registers—auxiliary learnable tokens—to mitigate these artifacts. In this repro-
-ducibility study, we verify whether these improvements extend to smaller ViTs. Specifically,
-we examine whether high-norm tokens appear in a DeiT-III Small model, whether registers
-reduce these artifacts, and how registers influence local and global feature representation.
-Our results confirm that smaller ViTs also exhibit high-norm tokens and registers partially
-alleviate them, improving interpretability. Although the overall performance gains are mod-
-est, these findings reinforce the utility of registers in enhancing ViTs while highlighting open
-questions about their varying effectiveness across different inputs and tasks. Our code is
-available at https://github.com/SnorrenanxD/regs-small-vits.
-### [Link](https://openreview.net/forum?id=5JflRlCt3Q)
